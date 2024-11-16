@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinuthna-Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(13, 17, 17);
+            color: whitesmoke;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            height: 80px;
+            background-color: purple; /* Changed to purple */
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: black;
+            font-size: 1.04rem;
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .right {
+            font-size: 1rem;
+        }
+
+        .first {
+            display: flex;
+            margin: 23px, 0;
+            justify-content: space-around;
+            align-items: center;
+            margin: 130px, 0;
+        }
+
+        .leftSection {
+            width: 50%;
+            font-size: 3rem;
+            margin: 30px 0;
+        }
+
+        .leftsection .buttons {
+            padding: 50px 0;
+        }
+
+        .leftSection .btn {
+            padding: 12px;
+            background: purple;
+            color: white;
+            border: 2px solid black;
+            font-size: 20px;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        .rightSection img {
+            width: 80%;
+            margin: 50px;
+            display: flex;
+        }
+
+        .first>div {
+            width: 30%;
+        }
+
+        .bojja {
+            color: rgb(111, 21, 228);
+        }
+
+        #element {
+            color: rgb(111, 21, 228);
+        }
+
+        .second {
+            max-width: 80vm;
+            margin: auto;
+        }
+
+        main hr {
+            border: 0;
+            background-color: blueviolet;
+            height: 1.2px;
+            width: 60px, 84px;
+        }
+
+        .second {
+            max-width: 1200px;
+            margin: auto;
+            padding: 40px 20px;
+            color: #ddd;
+            text-align: center;
+        }
+
+        .second h1 {
+            font-size: 2rem;
+            color: purple; /* Changed to purple */
+            margin-bottom: 20px;
+        }
+
+        .education-container, .skills-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .education-item, .skills-item {
+            flex: 1 1 30%;
+            background-color: rgb(22, 25, 25);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease;
+            text-align: left;
+            color: whitesmoke;
+        }
+
+        .education-item:hover, .skills-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .education-item h3, .skills-item h3 {
+            font-size: 1.2rem;
+            margin-bottom: 8px;
+            color: purple; /* Changed to purple */
+        }
+
+        .education-item p, .skills-item p {
+            font-size: 0.9rem;
+            margin-bottom: 5px;
+        }
+
+        .skills-section {
+            margin: 30px 0;
+        }
+
+        .section-content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .content-item {
+            flex: 1 1 45%;
+            padding: 20px;
+            background-color: rgb(22, 25, 25);
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+            text-align: left;
+        }
+
+        @media (max-width: 768px) {
+            .education-container, .skills-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .education-item, .skills-item {
+                width: 80%;
+            }
+        }
+
+        /* Contact section styling */
+        .contact-section {
+            padding: 40px 20px;
+            background-color: rgb(22, 25, 25);
+            color: whitesmoke;
+            text-align: center;
+        }
+
+        .contact-section h2 {
+            font-size: 2rem;
+            color: purple; /* Changed to purple */
+        }
+
+        .contact-section p {
+            font-size: 1rem;
+            margin-top: 10px;
+        }
+	section {
+            padding: 50px 20px;
+        }
+    </style>
+</head>
+
+<body>
+     <header>
+        <nav>
+            <div class="left">Vinuthna's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="first">
+            <div class="leftSection">
+                Hi, My Name is <span class="bojja">Vinuthna Bojja</span>
+                <div>I'm </div>
+                <div></div>
+                <span id="element"></span>
+                <div class="buttons">
+                    <button class="btn" onclick="downloadResume()">Download Resume</button>
+                    <button class="btn" onclick="viewGitHub()">View GitHub</button>
+                </div>
+            </div>
+            <div class="rightSection">
+                <img src="image.png" alt="">
+            </div>
+        </section>
+        <hr>
+        <section class="second">
+            <h1>Education:</h1>
+            <div class="education-container">
+                <div class="education-item">
+                    <h3>G.Narayanamma Institute Of Technology & Sciences</h3>
+                    <p>CGPA: 9.18</p>
+                    <p>November 2022 - Present</p>
+                </div>
+            </div>
+        </section>
+        <section class="skills-section">
+            <h1>Skills:</h1>
+            <div class="skills-container">
+                <div class="skills-item">
+                    <h3>Programming Languages</h3>
+                    <p>Python, Basics of Java</p>
+                </div>
+                <div class="skills-item">
+                    <h3>Technologies</h3>
+                    <p>React.js, Node.js, HTML, CSS, JavaScript, DBMS</p>
+                </div>
+            </div>
+        </section>
+	<section id="about" class="second">
+            <h1>About Me</h1>
+            <p>I'm a passionate computer science student with a strong interest in web development and programming
+
+I am seeking a role that fosters innovation and provides mentorship, enabling me to grow both personally and professionally. My goal is to join an organization where I can continuously learn, enhance my skills, and contribute meaningfully to its success. I am a diligent, punctual, and organized individual, recognized for my ability to manage multiple priorities effectively while maintaining a positive attitude. I firmly believe in the value of steady progress over fleeting success and take pride in delivering high-quality work within established deadlines.  
+</p>
+        </section>
+	<section id="projects" class="skills-section">
+            <h1>Projects:</h1>
+            <div class="skills-container">
+		<div class="skills-item">
+                    <h3>smart Park System</h3>
+                    <p>Smart Park helps users locate available parking spaces in real-time, providing convenience and efficiency in finding parking. With the rapid expansion of urbanization and the increasing number of vehicles on the road, finding parking spots has become a major hassle for drivers. It typically utilizes real-time data to display available parking spots, including street parking, parking garages, and lots. 
+Technologies: html, css, node.js, java script, Reactjs, js.
+</p>
+                </div>
+                <div class="skills-item">
+                    <h3>Amazon Clone</h3>
+                    <p>Developed a responsive front-end application simulating Amazon's UI.Using Html, Css Technologies.</p>
+                </div>
+                <div class="skills-item">
+                    <h3>Portfolio Website</h3>
+                    <p>Created a personal portfolio to showcase my projects and skills.Using Html,Css and Javascript.</p>
+                </div>
+            </div>
+        </section>
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+    		<h2>Contact Me</h2>
+    		<p>Email: vinuthna@gmail.com</p>
+   		<p>Phone: 123456789</p>
+	</section>
+
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Computer Science student.', '& Passionate about Coding.', 'web developer'],
+            typeSpeed: 50,
+        });
+
+        function downloadResume() {
+            window.location.href = 'assets/vinuthna_resume.docx';
+        }
+
+        function viewGitHub() {
+            window.open('https://github.com/vinuthna777', '_blank');
+        }
+    </script>
+</body>
+
+</html>
